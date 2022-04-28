@@ -26,3 +26,5 @@
             * The **n low-order** bits designate the **page offset**.
 
             ![pnumber-poffset](pagenumber-pageoffset.png)
+
+            * where **p** is an index into the page table and **d** is the displacement within the page
