@@ -17,3 +17,12 @@
     3. Replace the **page number** *p* in the **logical address** with the **frame number** *f*
     
 ![paging hardware](paging-hardware.png)
+
+* The **page size** (like the **frame size**) is defined by the hardware. 
+    * The size of a page is a power of 2
+        * It makes the translation of a **logical address** into a **page number** and **page offset** easy
+        * If the size of the **logical address space** is 2^m, and a **page size** is 2^n bytes then:
+            * The high-order **m-n** bits of a **logical address** designate the **page number**
+            * The **n low-order** bits designate the **page offset**.
+
+            ![pnumber-poffset](pagenumber-pageoffset.png)
